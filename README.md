@@ -28,45 +28,6 @@ Run the application on your device or emulator.
 ```shell
 $: flutter run
 ```
-
-### Cloud Function
-To use the Cloud Functions emulator, first install the Firebase CLI:
-```shell
-$: npm install -g firebase-tools
-```
-
-Move to the directory Firebase
-```shell
-$: cd Firebase
-```
-Launch the emulator
-```shell
-$: firebase emulators:start
-```
-### Setup
-To setup the Firebase structure you can use the provided script inside of the
-admin_pannel folder. You will first need to install the requirements with the
-following command:
-```bash
-$: pip3 install -U firebase_admin
-```
-Then run the script with python3 and the Google Services json file as argument:
-```bash
-$: python3 setup.py ./GoogleServices.json
-```
-This script will create the following administrator account:
-```python
-{
-	"name": "Admin",
-	"bio": "Administrator Account",
-	"email": "amdin@anilist.com",
-	"favs": [],
-	"animesList": [],
-	"id": "0000000000000000000000000000",
-	"photo": "",
-	"admin": True,
-}
-```
 ## Documentation
 The documentation is located in the Wiki of this repository.
 
